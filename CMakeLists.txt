@@ -38,6 +38,12 @@ target_link_libraries(uorb PRIVATE pthread)
 
 add_subdirectory(tools/uorb_tcp_topic_listener_lib EXCLUDE_FROM_ALL)
 
+set_target_properties(uorb PROPERTIES
+    VERSION ${PROJECT_VERSION}
+    SOVERSION 0
+    OUTPUT_NAME "uorb"
+)
+
 # install uorb
 install(TARGETS uorb
         ARCHIVE DESTINATION lib)
