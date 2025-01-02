@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.5)
 include(cmake/policy.cmake)
 use_cmake_policy()
 
-project(uorb)
+project(uorb VERSION 0.3)
 
 set(CMAKE_CXX_STANDARD 11)
 
